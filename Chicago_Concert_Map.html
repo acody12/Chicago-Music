@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb1db626f29cf8e0699f6cf153673bd1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bb1db626f29cf8e0699f6cf153673bd1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bb1db626f29cf8e0699f6cf153673bd1 = L.map(
+                "map_bb1db626f29cf8e0699f6cf153673bd1",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56344ae7bc25c9bb4c21d90b9a26fd0b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_56344ae7bc25c9bb4c21d90b9a26fd0b.addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var marker_2567d30f6b606a5a13f9ace732f0367b = L.marker(
+                [41.85397, -87.62676],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_66ddac1e1ad4402f0b89972c400bedfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dbd2889fe8bde61710c9ae7f27cde18 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21ebba95a81a46726c4d4d8c1b44e75a = $(`<div id="html_21ebba95a81a46726c4d4d8c1b44e75a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Bananna's Comedy Shack, Reggies</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2105 S. State St., 2nd fl.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">luzma’</b><br>             <a href="https://open.spotify.com/track/7qAMdwxh9kNNQPaGh1gTXo" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Hoverboard</b><br>             <a href="https://open.spotify.com/track/11dFVgyxvmNGNdj7OtVPvj" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Woonds</b><br>             <a href="https://open.spotify.com/track/2xQ3OeywjpEXW0jLMBvqKe" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_4dbd2889fe8bde61710c9ae7f27cde18.setContent(html_21ebba95a81a46726c4d4d8c1b44e75a);
+            
+        
+
+        marker_2567d30f6b606a5a13f9ace732f0367b.bindPopup(popup_4dbd2889fe8bde61710c9ae7f27cde18)
+        ;
+
+        
+    
+    
+            marker_2567d30f6b606a5a13f9ace732f0367b.bindTooltip(
+                `<div>
+                     <b>Bananna's Comedy Shack, Reggies</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2567d30f6b606a5a13f9ace732f0367b.setIcon(icon_66ddac1e1ad4402f0b89972c400bedfd);
+            
+    
+            var marker_df7752ac115ddf4c26d334ec5ffc9f47 = L.marker(
+                [41.93972, -87.68095],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_4de2170d04e9d5016e48a007604840a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ee98ac048516089d0c8a39aafeddde1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_989fda23cf57f29da79a5927d00549e9 = $(`<div id="html_989fda23cf57f29da79a5927d00549e9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Beat Kitchen</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2100 W Belmont Ave</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Brown</b><br>             <a href="https://open.spotify.com/track/6aqm56xP40foYBBtAWWrnY" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Bradley</b><br>             <a href="https://open.spotify.com/track/3HC6U39266ytr7fMW9M2Mz" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_5ee98ac048516089d0c8a39aafeddde1.setContent(html_989fda23cf57f29da79a5927d00549e9);
+            
+        
+
+        marker_df7752ac115ddf4c26d334ec5ffc9f47.bindPopup(popup_5ee98ac048516089d0c8a39aafeddde1)
+        ;
+
+        
+    
+    
+            marker_df7752ac115ddf4c26d334ec5ffc9f47.bindTooltip(
+                `<div>
+                     <b>Beat Kitchen</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df7752ac115ddf4c26d334ec5ffc9f47.setIcon(icon_4de2170d04e9d5016e48a007604840a2);
+            
+    
+            var marker_c6e46bb001470844b7141a3ed8f56ac2 = L.marker(
+                [41.88532, -87.66147],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_a6013ef6b6cafef1968cfcc4f658e963 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_905165952cf71f88869ec93287762d6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2ecf4750dc800907dffea103e6d4b91 = $(`<div id="html_e2ecf4750dc800907dffea103e6d4b91" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Bottom Lounge</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1375 W. Lake St.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Little Miss Nasty</b><br>             <a href="https://open.spotify.com/track/5ap6fQw3aoInE6ZRLCSNJP" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Mimi Barks</b><br>             <a href="https://open.spotify.com/track/3x1PRKezDo9OfXmtbqf0Do" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_905165952cf71f88869ec93287762d6d.setContent(html_e2ecf4750dc800907dffea103e6d4b91);
+            
+        
+
+        marker_c6e46bb001470844b7141a3ed8f56ac2.bindPopup(popup_905165952cf71f88869ec93287762d6d)
+        ;
+
+        
+    
+    
+            marker_c6e46bb001470844b7141a3ed8f56ac2.bindTooltip(
+                `<div>
+                     <b>Bottom Lounge</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6e46bb001470844b7141a3ed8f56ac2.setIcon(icon_a6013ef6b6cafef1968cfcc4f658e963);
+            
+    
+            var marker_2a3451c4ff21f32b8ff599714e854d8f = L.marker(
+                [41.89165, -87.60954],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_7a00b168610602cd4e5b94544a212006 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74e8f92f290a9ed5b2b659841e4b0dd0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a807faf54e1305cfe08110f7cd024684 = $(`<div id="html_a807faf54e1305cfe08110f7cd024684" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Chicago Shakespeare Theater</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">At Navy Pier, 600 E Grand Ave</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">The Merry Wives Of Windsor</b><br>             <a href="https://open.spotify.com/track/6uu4wn0YQDSDJsepPtPnmN" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_74e8f92f290a9ed5b2b659841e4b0dd0.setContent(html_a807faf54e1305cfe08110f7cd024684);
+            
+        
+
+        marker_2a3451c4ff21f32b8ff599714e854d8f.bindPopup(popup_74e8f92f290a9ed5b2b659841e4b0dd0)
+        ;
+
+        
+    
+    
+            marker_2a3451c4ff21f32b8ff599714e854d8f.bindTooltip(
+                `<div>
+                     <b>Chicago Shakespeare Theater</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a3451c4ff21f32b8ff599714e854d8f.setIcon(icon_7a00b168610602cd4e5b94544a212006);
+            
+    
+            var marker_b1970958660f44e7227c95c7e8496516 = L.marker(
+                [41.88539, -87.62751],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_30a86ea63021a033223c55e0b35fd130 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12407d14050e786171c04874e045670a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16cdca0ff1875b60c6c61b239970bafa = $(`<div id="html_16cdca0ff1875b60c6c61b239970bafa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Chicago Theatre</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">175 N. State St.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Rachel Bloom</b><br>             <a href="https://open.spotify.com/track/139tsLjqIp7RJo22lAaTPs" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_12407d14050e786171c04874e045670a.setContent(html_16cdca0ff1875b60c6c61b239970bafa);
+            
+        
+
+        marker_b1970958660f44e7227c95c7e8496516.bindPopup(popup_12407d14050e786171c04874e045670a)
+        ;
+
+        
+    
+    
+            marker_b1970958660f44e7227c95c7e8496516.bindTooltip(
+                `<div>
+                     <b>Chicago Theatre</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1970958660f44e7227c95c7e8496516.setIcon(icon_30a86ea63021a033223c55e0b35fd130);
+            
+    
+            var marker_500361e355113d09075ff2d874117804 = L.marker(
+                [41.92366, -87.69878],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_3600cf2d80bdebead898941bae3bfb51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eaff96e794286fe160231cf87c0901ba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5405ae27d5465d0a29a60d2d97d37c1b = $(`<div id="html_5405ae27d5465d0a29a60d2d97d37c1b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Cole's Bar</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2338 N. Milwaukee Ave</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">The Convenience</b><br>             <a href="https://open.spotify.com/track/3H5pElWVrTWGqLhqo7LxQM" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_eaff96e794286fe160231cf87c0901ba.setContent(html_5405ae27d5465d0a29a60d2d97d37c1b);
+            
+        
+
+        marker_500361e355113d09075ff2d874117804.bindPopup(popup_eaff96e794286fe160231cf87c0901ba)
+        ;
+
+        
+    
+    
+            marker_500361e355113d09075ff2d874117804.bindTooltip(
+                `<div>
+                     <b>Cole's Bar</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_500361e355113d09075ff2d874117804.setIcon(icon_3600cf2d80bdebead898941bae3bfb51);
+            
+    
+            var marker_73f668d826829b7f509473f89eea2290 = L.marker(
+                [41.95605, -87.72294],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_e0500bef6c551c3e8f840aabdfba0639 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44a824515ad28bfa6cc936ed82046249 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9e2fc4bcea022971396212b810f564c4 = $(`<div id="html_9e2fc4bcea022971396212b810f564c4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Color Club</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">4146 N. Elston Ave.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Matt Gold</b><br>             <a href="https://open.spotify.com/track/18yW5FJ2whwktWEgwy2lSY" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Dustin Laurenzi</b><br>             <a href="https://open.spotify.com/track/7d0JsxY8pW5AarQifGk44E" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Lane Beckstrom</b><br>             <a href="https://open.spotify.com/track/4GMibJwVGwuXP6q7cTWXYq" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_44a824515ad28bfa6cc936ed82046249.setContent(html_9e2fc4bcea022971396212b810f564c4);
+            
+        
+
+        marker_73f668d826829b7f509473f89eea2290.bindPopup(popup_44a824515ad28bfa6cc936ed82046249)
+        ;
+
+        
+    
+    
+            marker_73f668d826829b7f509473f89eea2290.bindTooltip(
+                `<div>
+                     <b>Color Club</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73f668d826829b7f509473f89eea2290.setIcon(icon_e0500bef6c551c3e8f840aabdfba0639);
+            
+    
+            var marker_b57735c5aa2e7545c8077431342e4fad = L.marker(
+                [42.04179, -87.88716],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_2dc3d1b1b84c07dbf4100d4816d07116 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06b35c3806081c1de9b601651cb3ca4b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5958a5d2e1ef1f96891e3fc34477318e = $(`<div id="html_5958a5d2e1ef1f96891e3fc34477318e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Des Plaines Theatre</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1476 Miner</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Steel Panther</b><br>             <a href="https://open.spotify.com/track/1iWLoUrmSLht6keK0436jK" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_06b35c3806081c1de9b601651cb3ca4b.setContent(html_5958a5d2e1ef1f96891e3fc34477318e);
+            
+        
+
+        marker_b57735c5aa2e7545c8077431342e4fad.bindPopup(popup_06b35c3806081c1de9b601651cb3ca4b)
+        ;
+
+        
+    
+    
+            marker_b57735c5aa2e7545c8077431342e4fad.bindTooltip(
+                `<div>
+                     <b>Des Plaines Theatre</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b57735c5aa2e7545c8077431342e4fad.setIcon(icon_2dc3d1b1b84c07dbf4100d4816d07116);
+            
+    
+            var marker_a8ab72401e8a950293820ccbb55a9afc = L.marker(
+                [41.86513, -87.78969],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_647cd1e04a78bbce3496662d93b5959e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_191ab145cad47239741432853473db99 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d52a719c90a15d151e2245c5cd6c7fc = $(`<div id="html_3d52a719c90a15d151e2245c5cd6c7fc" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">FitzGerald's</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">6615 Roosevelt Rd.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Carolyn Wonderland</b><br>             <a href="https://open.spotify.com/track/3yEPbndiOIRsH4FA2dBrTH" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Bill O'connell</b><br>             <a href="No tracks found" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_191ab145cad47239741432853473db99.setContent(html_3d52a719c90a15d151e2245c5cd6c7fc);
+            
+        
+
+        marker_a8ab72401e8a950293820ccbb55a9afc.bindPopup(popup_191ab145cad47239741432853473db99)
+        ;
+
+        
+    
+    
+            marker_a8ab72401e8a950293820ccbb55a9afc.bindTooltip(
+                `<div>
+                     <b>FitzGerald's</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8ab72401e8a950293820ccbb55a9afc.setIcon(icon_647cd1e04a78bbce3496662d93b5959e);
+            
+    
+            var marker_e9a0333b9836ec77f96ebca0578e0d93 = L.marker(
+                [41.88279, -87.65249],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_11d80d952b57f4b76007ad2f5754be92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05f641ad39d559a1e2689fc48258deeb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b30ba2c1ce5069104857830dd4f16bfd = $(`<div id="html_b30ba2c1ce5069104857830dd4f16bfd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Garcia's Chicago</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1001 W Washington Blvd</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Big Shrimp</b><br>             <a href="https://open.spotify.com/track/0EfXVm88rG8y8U342YcRgX" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Tand.</b><br>             <a href="https://open.spotify.com/track/6wtcR8APXJAtPXb6LV96ia" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Lucky Pickers</b><br>             <a href="No tracks found" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_05f641ad39d559a1e2689fc48258deeb.setContent(html_b30ba2c1ce5069104857830dd4f16bfd);
+            
+        
+
+        marker_e9a0333b9836ec77f96ebca0578e0d93.bindPopup(popup_05f641ad39d559a1e2689fc48258deeb)
+        ;
+
+        
+    
+    
+            marker_e9a0333b9836ec77f96ebca0578e0d93.bindTooltip(
+                `<div>
+                     <b>Garcia's Chicago</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9a0333b9836ec77f96ebca0578e0d93.setIcon(icon_11d80d952b57f4b76007ad2f5754be92);
+            
+    
+            var marker_5b3b7d703b515b0f240f1465ce8c7360 = L.marker(
+                [41.8882, -87.6292],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_ef3482c419d0993bc5f02b0f0f2349cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fa69f10854230c0932891b086549dc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d7f802b4b7c400374911a4701dfed5fb = $(`<div id="html_d7f802b4b7c400374911a4701dfed5fb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">House of Blues - Chicago</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">329 N. Dearborn St.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Josh Garrels</b><br>             <a href="https://open.spotify.com/track/6uwnfvgpVU09RqITeeZNCl" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Taylor Armstrong</b><br>             <a href="https://open.spotify.com/track/6zW2qpzcxKXW8J12P3NYES" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_8fa69f10854230c0932891b086549dc6.setContent(html_d7f802b4b7c400374911a4701dfed5fb);
+            
+        
+
+        marker_5b3b7d703b515b0f240f1465ce8c7360.bindPopup(popup_8fa69f10854230c0932891b086549dc6)
+        ;
+
+        
+    
+    
+            marker_5b3b7d703b515b0f240f1465ce8c7360.bindTooltip(
+                `<div>
+                     <b>House of Blues - Chicago</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b3b7d703b515b0f240f1465ce8c7360.setIcon(icon_ef3482c419d0993bc5f02b0f0f2349cf);
+            
+    
+            var marker_c0ea089cb3d28a7d4ae8ec831c58de52 = L.marker(
+                [41.93931, -87.68643],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_f54279e8603deddf5bc5aa28444c2728 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00c787fb2aec9c52ce3c018ecea0c705 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_041fce5ca7ab8f6033d57136abbff806 = $(`<div id="html_041fce5ca7ab8f6033d57136abbff806" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Hungry Brain</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2319 W. Belmont</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Bishop</b><br>             <a href="https://open.spotify.com/track/3mRLHiSHYtC8Hk7bzZdUs1" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Kessler</b><br>             <a href="https://open.spotify.com/track/5GpEHUNI0T7L7H3DnAaBXh" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_00c787fb2aec9c52ce3c018ecea0c705.setContent(html_041fce5ca7ab8f6033d57136abbff806);
+            
+        
+
+        marker_c0ea089cb3d28a7d4ae8ec831c58de52.bindPopup(popup_00c787fb2aec9c52ce3c018ecea0c705)
+        ;
+
+        
+    
+    
+            marker_c0ea089cb3d28a7d4ae8ec831c58de52.bindTooltip(
+                `<div>
+                     <b>Hungry Brain</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0ea089cb3d28a7d4ae8ec831c58de52.setIcon(icon_f54279e8603deddf5bc5aa28444c2728);
+            
+    
+            var marker_40194cf87e3948404e5765d1c3b370cd = L.marker(
+                [41.92879, -87.649],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_8b70376b7b0f20529fcf129b6a953fd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fbd2d72e1a847d40453ae1f8e288e67 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f000891d89ea9c235ca21b86a738a6e = $(`<div id="html_0f000891d89ea9c235ca21b86a738a6e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Kingston Mines</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2548 North Halsted</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Mike Wheeler Blues Band</b><br>             <a href="https://open.spotify.com/track/6SeuQNyyAMOtpuIqw1TBCR" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_2fbd2d72e1a847d40453ae1f8e288e67.setContent(html_0f000891d89ea9c235ca21b86a738a6e);
+            
+        
+
+        marker_40194cf87e3948404e5765d1c3b370cd.bindPopup(popup_2fbd2d72e1a847d40453ae1f8e288e67)
+        ;
+
+        
+    
+    
+            marker_40194cf87e3948404e5765d1c3b370cd.bindTooltip(
+                `<div>
+                     <b>Kingston Mines</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40194cf87e3948404e5765d1c3b370cd.setIcon(icon_8b70376b7b0f20529fcf129b6a953fd6);
+            
+    
+            var marker_6dcb9e9120f0fe824b90b1c28aecc495 = L.marker(
+                [41.92605, -87.64975],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_a1e8424d7e79d1d1e0cad47d8330fa95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c7720783968f0766f41a15999beff28 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7ddfc6c3656c5c1a99d48da0d10d81c0 = $(`<div id="html_7ddfc6c3656c5c1a99d48da0d10d81c0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Lincoln Hall</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2424 N Lincoln Ave</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Sports</b><br>             <a href="https://open.spotify.com/track/2qpacEyFxmbxCpIEqZkqvC" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_5c7720783968f0766f41a15999beff28.setContent(html_7ddfc6c3656c5c1a99d48da0d10d81c0);
+            
+        
+
+        marker_6dcb9e9120f0fe824b90b1c28aecc495.bindPopup(popup_5c7720783968f0766f41a15999beff28)
+        ;
+
+        
+    
+    
+            marker_6dcb9e9120f0fe824b90b1c28aecc495.bindTooltip(
+                `<div>
+                     <b>Lincoln Hall</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dcb9e9120f0fe824b90b1c28aecc495.setIcon(icon_a1e8424d7e79d1d1e0cad47d8330fa95);
+            
+    
+            var marker_8f87bb3750a3f8d128220793afb6fa82 = L.marker(
+                [41.83014, -87.64622],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_be8ed9fbab6824073842436eec4483ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76bef7376d7d98cc147a6e4fb0315bcf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b23f5c268b01b01069ef3ac24839b27c = $(`<div id="html_b23f5c268b01b01069ef3ac24839b27c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Ramova Loft</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">3520 S Halsted</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Aliah Sheffield</b><br>             <a href="https://open.spotify.com/track/6iYv2KA5u8JwNAR2Iw1aoi" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_76bef7376d7d98cc147a6e4fb0315bcf.setContent(html_b23f5c268b01b01069ef3ac24839b27c);
+            
+        
+
+        marker_8f87bb3750a3f8d128220793afb6fa82.bindPopup(popup_76bef7376d7d98cc147a6e4fb0315bcf)
+        ;
+
+        
+    
+    
+            marker_8f87bb3750a3f8d128220793afb6fa82.bindTooltip(
+                `<div>
+                     <b>Ramova Loft</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f87bb3750a3f8d128220793afb6fa82.setIcon(icon_be8ed9fbab6824073842436eec4483ea);
+            
+    
+            var marker_db9b82f354e33643bd6cca601f697e72 = L.marker(
+                [41.83018, -87.64624],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_2934c062e9f9548b6ec599f1f9ecab23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80df20a4d80b3fa5b59bbb8ce76c2754 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23ce1ddf1e6bba77f1be722b6cb07a86 = $(`<div id="html_23ce1ddf1e6bba77f1be722b6cb07a86" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Ramova Theatre</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">3520 South Halsted Street</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Curren$y</b><br>             <a href="https://open.spotify.com/track/52O0lWLhF9VoOVACnlnAnS" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Fendi P</b><br>             <a href="https://open.spotify.com/track/3UJOFCSJ0aIkY24pJbWbzn" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_80df20a4d80b3fa5b59bbb8ce76c2754.setContent(html_23ce1ddf1e6bba77f1be722b6cb07a86);
+            
+        
+
+        marker_db9b82f354e33643bd6cca601f697e72.bindPopup(popup_80df20a4d80b3fa5b59bbb8ce76c2754)
+        ;
+
+        
+    
+    
+            marker_db9b82f354e33643bd6cca601f697e72.bindTooltip(
+                `<div>
+                     <b>Ramova Theatre</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db9b82f354e33643bd6cca601f697e72.setIcon(icon_2934c062e9f9548b6ec599f1f9ecab23);
+            
+    
+            var marker_1e1503951b9f767b6dce1e630f25c326 = L.marker(
+                [41.85398, -87.62707],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_3047b7914bdb3dc9f53cdca5e03b56d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7e3544e5dcb7aeedc1ba12df4592295 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc86991897a3368ff1b482863028048a = $(`<div id="html_dc86991897a3368ff1b482863028048a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Reggie's</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2105 S. State St.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">The Hooten Hallers</b><br>             <a href="https://open.spotify.com/track/0GVO54A5SIDUGambYQFMP5" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_b7e3544e5dcb7aeedc1ba12df4592295.setContent(html_dc86991897a3368ff1b482863028048a);
+            
+        
+
+        marker_1e1503951b9f767b6dce1e630f25c326.bindPopup(popup_b7e3544e5dcb7aeedc1ba12df4592295)
+        ;
+
+        
+    
+    
+            marker_1e1503951b9f767b6dce1e630f25c326.bindTooltip(
+                `<div>
+                     <b>Reggie's</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e1503951b9f767b6dce1e630f25c326.setIcon(icon_3047b7914bdb3dc9f53cdca5e03b56d3);
+            
+    
+            var marker_a4a7a882b3fe205ae63eeb9861ed0013 = L.marker(
+                [41.85405, -87.62695],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_3b26ce52a371ef886bb2f48b2676a63a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_932990e3686e91a0f9577e5ddf0ca691 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c28f0a7951be9bfd04602711e6e9b172 = $(`<div id="html_c28f0a7951be9bfd04602711e6e9b172" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Reggie's Rock Club</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2109 South State Street</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Uada</b><br>             <a href="https://open.spotify.com/track/19iaDzpgbFLc2HPUZjmNDM" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Mortiis</b><br>             <a href="https://open.spotify.com/track/1SlNp7lN9Rvg9DbBHjgC7a" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">ROME (Jerome Reuter)</b><br>             <a href="Artist not found" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Wraith Knight</b><br>             <a href="https://open.spotify.com/track/0m7XVJAVvNhcAO4OdsJMpI" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_932990e3686e91a0f9577e5ddf0ca691.setContent(html_c28f0a7951be9bfd04602711e6e9b172);
+            
+        
+
+        marker_a4a7a882b3fe205ae63eeb9861ed0013.bindPopup(popup_932990e3686e91a0f9577e5ddf0ca691)
+        ;
+
+        
+    
+    
+            marker_a4a7a882b3fe205ae63eeb9861ed0013.bindTooltip(
+                `<div>
+                     <b>Reggie's Rock Club</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4a7a882b3fe205ae63eeb9861ed0013.setIcon(icon_3b26ce52a371ef886bb2f48b2676a63a);
+            
+    
+            var marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca = L.marker(
+                [42.04087, -87.68011],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_a3c15dec4df8b1a66cbace097514660d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_907d0f9dedaba3ce74da12ebf1a3191d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c9e9b6fe7b8318bec9b03b59de21185e = $(`<div id="html_c9e9b6fe7b8318bec9b03b59de21185e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">SPACE</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1245 Chicago Avenue,</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Sinkane</b><br>             <a href="https://open.spotify.com/track/6lJ9BakUjUGCuBwvndDsam" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_907d0f9dedaba3ce74da12ebf1a3191d.setContent(html_c9e9b6fe7b8318bec9b03b59de21185e);
+            
+        
+
+        marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca.bindPopup(popup_907d0f9dedaba3ce74da12ebf1a3191d)
+        ;
+
+        
+    
+    
+            marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca.bindTooltip(
+                `<div>
+                     <b>SPACE</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca.setIcon(icon_a3c15dec4df8b1a66cbace097514660d);
+            
+    
+            var marker_2cefb66d27ccd762c94427301d0f8c77 = L.marker(
+                [41.91027, -87.67797],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_b4aa63871adf00ec6dada34bf1b9ee83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d99ee86a10cf16c906c11ea3a150449 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57d7e7cf2c1e508b08ee4a5c29a5120c = $(`<div id="html_57d7e7cf2c1e508b08ee4a5c29a5120c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Subterranean</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">2011 W. North Ave</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Ashes to Amber</b><br>             <a href="https://open.spotify.com/track/7jhuuJWzqWznpvB0p7EoJs" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Nature TV</b><br>             <a href="https://open.spotify.com/track/4KE91Xg3FL51yMhnpSqRvE" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Stewart Arp</b><br>             <a href="https://open.spotify.com/track/53VHtmx0f9mXCKiLdKqHnu" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_5d99ee86a10cf16c906c11ea3a150449.setContent(html_57d7e7cf2c1e508b08ee4a5c29a5120c);
+            
+        
+
+        marker_2cefb66d27ccd762c94427301d0f8c77.bindPopup(popup_5d99ee86a10cf16c906c11ea3a150449)
+        ;
+
+        
+    
+    
+            marker_2cefb66d27ccd762c94427301d0f8c77.bindTooltip(
+                `<div>
+                     <b>Subterranean</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cefb66d27ccd762c94427301d0f8c77.setIcon(icon_b4aa63871adf00ec6dada34bf1b9ee83);
+            
+    
+            var marker_a1de12007c977b9b29a4628f2b3ce2ac = L.marker(
+                [41.85772, -87.65746],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_83957911b4743bbb58e801706910e76f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9b84b125e5323795cb9b7966f450054 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea071fd4010a8ca0384e75e5ba78cf55 = $(`<div id="html_ea071fd4010a8ca0384e75e5ba78cf55" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Thalia Hall</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1807 South Allport Street,</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Sarah Kinsley</b><br>             <a href="https://open.spotify.com/track/213XNePBS3v9QW0lnPUXmZ" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Charlie Burg</b><br>             <a href="https://open.spotify.com/track/5cJZPy9Tad2aT3ZMnN6yvd" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_b9b84b125e5323795cb9b7966f450054.setContent(html_ea071fd4010a8ca0384e75e5ba78cf55);
+            
+        
+
+        marker_a1de12007c977b9b29a4628f2b3ce2ac.bindPopup(popup_b9b84b125e5323795cb9b7966f450054)
+        ;
+
+        
+    
+    
+            marker_a1de12007c977b9b29a4628f2b3ce2ac.bindTooltip(
+                `<div>
+                     <b>Thalia Hall</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1de12007c977b9b29a4628f2b3ce2ac.setIcon(icon_83957911b4743bbb58e801706910e76f);
+            
+    
+            var marker_4235d6015ccd3fc9bef1b9c26213d8c6 = L.marker(
+                [41.92435, -87.71318],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_f74a4faaa14ef5439e80de33f6a6e109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14cb0db04cc66e1422dc28c918bf373a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ed027879b0ce2f2a55042d3de43dfd7 = $(`<div id="html_5ed027879b0ce2f2a55042d3de43dfd7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">The Burlington</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">Logan Square      3425 W. Fullerton Ave.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">The Lowliest One</b><br>             <a href="https://open.spotify.com/track/5asa6NiDwzeKXl1r2TBclv" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Jeff Schaller and the Long Way Home</b><br>             <a href="https://open.spotify.com/track/4zTJRjs42m8ghu17Mr1N84" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_14cb0db04cc66e1422dc28c918bf373a.setContent(html_5ed027879b0ce2f2a55042d3de43dfd7);
+            
+        
+
+        marker_4235d6015ccd3fc9bef1b9c26213d8c6.bindPopup(popup_14cb0db04cc66e1422dc28c918bf373a)
+        ;
+
+        
+    
+    
+            marker_4235d6015ccd3fc9bef1b9c26213d8c6.bindTooltip(
+                `<div>
+                     <b>The Burlington</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4235d6015ccd3fc9bef1b9c26213d8c6.setIcon(icon_f74a4faaa14ef5439e80de33f6a6e109);
+            
+    
+            var marker_e1c7a3f72958750ae94e8de8423e81c8 = L.marker(
+                [41.90046, -87.68664],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_2fdef50544a840147162abe57ce3e887 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4195aae06b2fa3bbfcec38ba8ffb695 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9563219dbefa36e6adb4a8c523c09477 = $(`<div id="html_9563219dbefa36e6adb4a8c523c09477" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">The Empty Bottle</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">1035 North Western Avenue,</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Junegrass</b><br>             <a href="https://open.spotify.com/track/18NbtCjFb7uOWO4SGLoMMe" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_b4195aae06b2fa3bbfcec38ba8ffb695.setContent(html_9563219dbefa36e6adb4a8c523c09477);
+            
+        
+
+        marker_e1c7a3f72958750ae94e8de8423e81c8.bindPopup(popup_b4195aae06b2fa3bbfcec38ba8ffb695)
+        ;
+
+        
+    
+    
+            marker_e1c7a3f72958750ae94e8de8423e81c8.bindTooltip(
+                `<div>
+                     <b>The Empty Bottle</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1c7a3f72958750ae94e8de8423e81c8.setIcon(icon_2fdef50544a840147162abe57ce3e887);
+            
+    
+            var marker_56c04961776cf3e3f7ae77aeefb39a64 = L.marker(
+                [41.93951, -87.65383],
+                {
+}
+            ).addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+            var icon_b5178ad0997c28921d7c759772c48248 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "music",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ca851cff1565bba8e852a75aa1fdeb7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f3c472227a773ce42097ec8386e729bf = $(`<div id="html_f3c472227a773ce42097ec8386e729bf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Helvetica', sans-serif; width: 220px; max-height: 250px; overflow-y: auto;">         <h4 style="margin: 0 0 5px 0; color: #d35400;">Vic Theatre</h4>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #7f8c8d;">3145 N. Sheffield Ave.</p>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Maisie Peters</b><br>             <a href="https://open.spotify.com/track/52CDVCBt7tQI29r9ovQOJt" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>                  <div style="margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">             <b style="color: #333;">Bella Kay</b><br>             <a href="https://open.spotify.com/track/5IMpnpD0tQVcqWlVIgtAtV" target="_blank" style="color: #1DB954; text-decoration: none; font-size: 12px; font-weight: bold;">                 ▶️ Listen on Spotify             </a>         </div>              </div>     </div>`)[0];
+                popup_6ca851cff1565bba8e852a75aa1fdeb7.setContent(html_f3c472227a773ce42097ec8386e729bf);
+            
+        
+
+        marker_56c04961776cf3e3f7ae77aeefb39a64.bindPopup(popup_6ca851cff1565bba8e852a75aa1fdeb7)
+        ;
+
+        
+    
+    
+            marker_56c04961776cf3e3f7ae77aeefb39a64.bindTooltip(
+                `<div>
+                     <b>Vic Theatre</b>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56c04961776cf3e3f7ae77aeefb39a64.setIcon(icon_b5178ad0997c28921d7c759772c48248);
+            
+    
+            tile_layer_56344ae7bc25c9bb4c21d90b9a26fd0b.addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+                marker_2567d30f6b606a5a13f9ace732f0367b.setIcon(icon_66ddac1e1ad4402f0b89972c400bedfd);
+            
+    
+                marker_df7752ac115ddf4c26d334ec5ffc9f47.setIcon(icon_4de2170d04e9d5016e48a007604840a2);
+            
+    
+                marker_c6e46bb001470844b7141a3ed8f56ac2.setIcon(icon_a6013ef6b6cafef1968cfcc4f658e963);
+            
+    
+                marker_2a3451c4ff21f32b8ff599714e854d8f.setIcon(icon_7a00b168610602cd4e5b94544a212006);
+            
+    
+                marker_b1970958660f44e7227c95c7e8496516.setIcon(icon_30a86ea63021a033223c55e0b35fd130);
+            
+    
+                marker_500361e355113d09075ff2d874117804.setIcon(icon_3600cf2d80bdebead898941bae3bfb51);
+            
+    
+                marker_73f668d826829b7f509473f89eea2290.setIcon(icon_e0500bef6c551c3e8f840aabdfba0639);
+            
+    
+                marker_b57735c5aa2e7545c8077431342e4fad.setIcon(icon_2dc3d1b1b84c07dbf4100d4816d07116);
+            
+    
+                marker_a8ab72401e8a950293820ccbb55a9afc.setIcon(icon_647cd1e04a78bbce3496662d93b5959e);
+            
+    
+                marker_e9a0333b9836ec77f96ebca0578e0d93.setIcon(icon_11d80d952b57f4b76007ad2f5754be92);
+            
+    
+                marker_5b3b7d703b515b0f240f1465ce8c7360.setIcon(icon_ef3482c419d0993bc5f02b0f0f2349cf);
+            
+    
+                marker_c0ea089cb3d28a7d4ae8ec831c58de52.setIcon(icon_f54279e8603deddf5bc5aa28444c2728);
+            
+    
+                marker_40194cf87e3948404e5765d1c3b370cd.setIcon(icon_8b70376b7b0f20529fcf129b6a953fd6);
+            
+    
+                marker_6dcb9e9120f0fe824b90b1c28aecc495.setIcon(icon_a1e8424d7e79d1d1e0cad47d8330fa95);
+            
+    
+                marker_8f87bb3750a3f8d128220793afb6fa82.setIcon(icon_be8ed9fbab6824073842436eec4483ea);
+            
+    
+                marker_db9b82f354e33643bd6cca601f697e72.setIcon(icon_2934c062e9f9548b6ec599f1f9ecab23);
+            
+    
+                marker_1e1503951b9f767b6dce1e630f25c326.setIcon(icon_3047b7914bdb3dc9f53cdca5e03b56d3);
+            
+    
+                marker_a4a7a882b3fe205ae63eeb9861ed0013.setIcon(icon_3b26ce52a371ef886bb2f48b2676a63a);
+            
+    
+                marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca.setIcon(icon_a3c15dec4df8b1a66cbace097514660d);
+            
+    
+                marker_2cefb66d27ccd762c94427301d0f8c77.setIcon(icon_b4aa63871adf00ec6dada34bf1b9ee83);
+            
+    
+                marker_a1de12007c977b9b29a4628f2b3ce2ac.setIcon(icon_83957911b4743bbb58e801706910e76f);
+            
+    
+                marker_4235d6015ccd3fc9bef1b9c26213d8c6.setIcon(icon_f74a4faaa14ef5439e80de33f6a6e109);
+            
+    
+                marker_e1c7a3f72958750ae94e8de8423e81c8.setIcon(icon_2fdef50544a840147162abe57ce3e887);
+            
+    
+                marker_56c04961776cf3e3f7ae77aeefb39a64.setIcon(icon_b5178ad0997c28921d7c759772c48248);
+            
+    
+            tile_layer_56344ae7bc25c9bb4c21d90b9a26fd0b.addTo(map_bb1db626f29cf8e0699f6cf153673bd1);
+        
+    
+                marker_2567d30f6b606a5a13f9ace732f0367b.setIcon(icon_66ddac1e1ad4402f0b89972c400bedfd);
+            
+    
+                marker_df7752ac115ddf4c26d334ec5ffc9f47.setIcon(icon_4de2170d04e9d5016e48a007604840a2);
+            
+    
+                marker_c6e46bb001470844b7141a3ed8f56ac2.setIcon(icon_a6013ef6b6cafef1968cfcc4f658e963);
+            
+    
+                marker_2a3451c4ff21f32b8ff599714e854d8f.setIcon(icon_7a00b168610602cd4e5b94544a212006);
+            
+    
+                marker_b1970958660f44e7227c95c7e8496516.setIcon(icon_30a86ea63021a033223c55e0b35fd130);
+            
+    
+                marker_500361e355113d09075ff2d874117804.setIcon(icon_3600cf2d80bdebead898941bae3bfb51);
+            
+    
+                marker_73f668d826829b7f509473f89eea2290.setIcon(icon_e0500bef6c551c3e8f840aabdfba0639);
+            
+    
+                marker_b57735c5aa2e7545c8077431342e4fad.setIcon(icon_2dc3d1b1b84c07dbf4100d4816d07116);
+            
+    
+                marker_a8ab72401e8a950293820ccbb55a9afc.setIcon(icon_647cd1e04a78bbce3496662d93b5959e);
+            
+    
+                marker_e9a0333b9836ec77f96ebca0578e0d93.setIcon(icon_11d80d952b57f4b76007ad2f5754be92);
+            
+    
+                marker_5b3b7d703b515b0f240f1465ce8c7360.setIcon(icon_ef3482c419d0993bc5f02b0f0f2349cf);
+            
+    
+                marker_c0ea089cb3d28a7d4ae8ec831c58de52.setIcon(icon_f54279e8603deddf5bc5aa28444c2728);
+            
+    
+                marker_40194cf87e3948404e5765d1c3b370cd.setIcon(icon_8b70376b7b0f20529fcf129b6a953fd6);
+            
+    
+                marker_6dcb9e9120f0fe824b90b1c28aecc495.setIcon(icon_a1e8424d7e79d1d1e0cad47d8330fa95);
+            
+    
+                marker_8f87bb3750a3f8d128220793afb6fa82.setIcon(icon_be8ed9fbab6824073842436eec4483ea);
+            
+    
+                marker_db9b82f354e33643bd6cca601f697e72.setIcon(icon_2934c062e9f9548b6ec599f1f9ecab23);
+            
+    
+                marker_1e1503951b9f767b6dce1e630f25c326.setIcon(icon_3047b7914bdb3dc9f53cdca5e03b56d3);
+            
+    
+                marker_a4a7a882b3fe205ae63eeb9861ed0013.setIcon(icon_3b26ce52a371ef886bb2f48b2676a63a);
+            
+    
+                marker_bc4e27bdbab4e6cbd8f8a82a8c1bafca.setIcon(icon_a3c15dec4df8b1a66cbace097514660d);
+            
+    
+                marker_2cefb66d27ccd762c94427301d0f8c77.setIcon(icon_b4aa63871adf00ec6dada34bf1b9ee83);
+            
+    
+                marker_a1de12007c977b9b29a4628f2b3ce2ac.setIcon(icon_83957911b4743bbb58e801706910e76f);
+            
+    
+                marker_4235d6015ccd3fc9bef1b9c26213d8c6.setIcon(icon_f74a4faaa14ef5439e80de33f6a6e109);
+            
+    
+                marker_e1c7a3f72958750ae94e8de8423e81c8.setIcon(icon_2fdef50544a840147162abe57ce3e887);
+            
+    
+                marker_56c04961776cf3e3f7ae77aeefb39a64.setIcon(icon_b5178ad0997c28921d7c759772c48248);
+            
+</script>
+</html>
